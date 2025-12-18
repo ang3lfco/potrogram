@@ -194,3 +194,71 @@ export async function unbookmarkPost(postId:string){
         }
     });
 }
+
+export async function sendMessage(receiverId: string, content: string){
+    const session = await auth();
+    if(!session?.user?.email) throw new Error("Not authenticated");
+    const me = await prisma.profile.findUnique({
+        where: {email: session.user.email}
+    });
+    
+    if(!me) throw new Error("Profile not found");
+    if(!content.trim()) return;
+    
+    const senderId = me.id;
+    if(senderId === receiverId) throw new Error("You cannot send messages to yourself");
+    let chat = await prisma.chat.findFirst({
+        where: {
+            members: {
+                hasEvery: [senderId, receiverId]
+            }
+        }
+    });
+    if(!chat){
+        chat = await prisma.chat.create({
+            data: {
+                members: [senderId, receiverId]
+            }
+        })
+    }
+    return prisma.message.create({
+        data: {
+            chatId: chat.id,
+            senderId: me.id,
+            receiverId, 
+            content
+        },
+    });
+}
+
+export async function getMessagesWith(userId: string){
+    const session = await auth();
+    if(!session?.user?.email) throw new Error("Not authenticated");
+    
+    const me = await prisma.profile.findUnique({
+        where: {email: session.user.email}
+    });
+    if(!me) throw new Error("Profile not found");
+    return prisma.message.findMany({
+        where:{
+            OR: [
+                {
+                    senderId: me.id,
+                    receiverId: userId,
+                },
+                {
+                    senderId: userId,
+                    receiverId: me.id,
+                },
+            ],
+        },
+        orderBy: {createdAt: "asc"},
+    });
+}
+
+export async function findProfileByUsername(username: string){
+    const profile = await prisma.profile.findFirst({
+        where: {username: username}
+    });
+    return profile;
+}

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Camera, Home, LayoutGrid, Search, User } from "lucide-react";
+import { Bell, Camera, Home, LayoutGrid, MessageSquareText, Search, User } from "lucide-react";
 
 export default function MobileNav(){
     return(
@@ -8,6 +8,10 @@ export default function MobileNav(){
               <div className="pl-2 bg-white rounded-t-xl w-full relative z-10 *:size-12 *:flex *:items-center *:justify-center justify-around">
                 <Link href="/" className="">
                   <Home/>
+                </Link>
+                
+                <Link href="/browse" className="">
+                  <LayoutGrid/>
                 </Link>
                 <Link href="/search" className="">
                   <Search/>
@@ -23,8 +27,13 @@ export default function MobileNav(){
                 </div>
               </div>
               <div className="pr-2 bg-white rounded-t-xl w-full relative z-10 *:size-12 *:flex *:items-center *:justify-center justify-around">
-                <Link href="/browse" className="">
-                  <LayoutGrid/>
+                
+                
+                <Link href="/messages" className=" ">
+                  <MessageSquareText/>
+                </Link>
+                <Link href="/notifications" className=" ">
+                  <Bell/>
                 </Link>
                 <Link href="/profile" className="text-ig-blue ">
                   <User/>

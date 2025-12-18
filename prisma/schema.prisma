@@ -51,7 +51,7 @@ model Like{
 }
 
 model Follower{
-  id    String @id @default(auto()) @map("_id") @db.ObjectId
+  id String @id @default(auto()) @map("_id") @db.ObjectId
   followingProfileEmail String
   followingProfileId String @db.ObjectId
   followedProfileId String @db.ObjectId
@@ -59,8 +59,23 @@ model Follower{
 }
 
 model Bookmark{
-  id    String @id @default(auto()) @map("_id") @db.ObjectId
+  id String @id @default(auto()) @map("_id") @db.ObjectId
   postId String @db.ObjectId
   author String
   createdAt DateTime @default(now())
+}
+
+model Chat{
+  id String @id @default(auto()) @map("_id") @db.ObjectId
+  members String[]
+  createdAt DateTime @default(now())
+}
+
+model Message{
+  id         String   @id @default(auto()) @map("_id") @db.ObjectId
+  chatId String @db.ObjectId
+  senderId   String   @db.ObjectId
+  receiverId String   @db.ObjectId
+  content    String
+  createdAt  DateTime @default(now())
 }
