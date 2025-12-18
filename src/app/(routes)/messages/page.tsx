@@ -30,6 +30,6 @@ export default async function MessagesPage(){
         },
     });
     return(
-        <MessagesPageContent meId={me.id} people={peopleInMyChats}/>
+        <MessagesPageContent people={peopleInMyChats}/>
     );
 }

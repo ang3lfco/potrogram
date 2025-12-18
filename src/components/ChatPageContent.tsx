@@ -17,12 +17,7 @@ type User = {
     avatar: string | null;
 };
 
-type Props = {
-  messages: Message[];
-  otherUser: User;
-};
-
-export default function ChatPageContent({meId, otherUser}:{meId:string; otherUser: User;}){
+export default function ChatPageContent({otherUser}:{otherUser: User;}){
     const [messages, setMessages] = useState<Message[]>([]);
     const [text, setText] = useState("");
 

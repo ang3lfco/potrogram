@@ -11,7 +11,7 @@ type User={
     avatar: string | null;
 }
 
-export default function MessagesClient({meId, people}:{meId: string; people: User[];}){
+export default function MessagesClient({people}:{people: User[];}){
     const [selectedUser, setSelectedUser] = useState<User | null>(null);
     
     const [profileSearched, setProfileSearched] = useState("");
@@ -49,7 +49,7 @@ export default function MessagesClient({meId, people}:{meId: string; people: Use
                         <div className="md:hidden p-3 border-b">
                             <button onClick={() => setSelectedUser(null)} className="text-sm text-blue-600 font-medium">← Back</button>
                         </div>
-                        <ChatPageContent meId={meId} otherUser={selectedUser}/>
+                        <ChatPageContent otherUser={selectedUser}/>
                     </>
                 ) : (
                     <div className="h-full flex items-center justify-center text-gray-500">

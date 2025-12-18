@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Bell, Home, LayoutGrid, MessageCircle, MessageSquareText, Search, SendHorizonal, SquarePlus, User } from "lucide-react";
+import { Bell, Home, LayoutGrid, MessageSquareText, Search, SquarePlus, User } from "lucide-react";
 
 export default function DesktopNav(){
     return(
