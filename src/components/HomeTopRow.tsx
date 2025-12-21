@@ -7,7 +7,7 @@ import Link from "next/link";
 export default function HomeTopRow({profiles}:{profiles:Profile[]}){
     return(
         <div className="flex gap-3 max-w-full overflow-auto">
-            <div onClick={() => alert("Function not available yet!")}>
+            <div onClick={() => alert("Función aún no disponible!")}>
                 <button className="size-24 bg-gradient-to-tr from-ig-lightblue to-ig-blue text-white rounded-full flex items-center justify-center">
                     <PlusIcon size="42"/>
                 </button>
