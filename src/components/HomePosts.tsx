@@ -40,7 +40,7 @@ export default async function HomePosts({profiles}:{profiles:Profile[]}){
             {posts.length === 0 && (
                 <div className="mt-20">
                     <p className="text-center text-gray-500 ">
-                        You havent added any friends yet — start connecting!
+                        Aún no has añadido ningún amigo: ¡comienza a conectarte!
                     </p>
                 </div>
             )}
@@ -75,11 +75,11 @@ export default async function HomePosts({profiles}:{profiles:Profile[]}){
                                 <Link href={`/posts/${post.id}`}>
                                     {commentsOnPost.length > 0 ? (
                                         <div className="text-sm text-gray-500">
-                                            View all {commentsOnPost.length} comments
+                                            Ver los {commentsOnPost.length} comentarios
                                         </div>
                                     ) : (
                                         <div className="text-sm text-gray-500">
-                                            No comments yet
+                                            Sin comentarios aún
                                         </div>
                                     )}
                                 </Link>

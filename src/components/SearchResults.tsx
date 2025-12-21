@@ -25,7 +25,7 @@ export default async function SearchResults({query}: {query:string}){
             {profiles?.length > 0 ? (
                 <div className="grid mt-4 sm:grid-cols-1 gap-2">
                     <h1 className="text-sm mt-4">
-                        Profiles found: 
+                        Perfiles encontrados: 
                     </h1>
                     {profiles.map(profile => (
                         <Link key={profile.id} href={`/users/${profile.username}`} className="flex items-center gap-2 hover:bg-gray-100 transition p-2 rounded-lg">
@@ -41,19 +41,19 @@ export default async function SearchResults({query}: {query:string}){
                 </div>
             ) : (
                 <h1 className="text-sm mt-4">
-                    No profiles found.
+                    Ningun perfil encontrado.
                 </h1>
             )}
             {posts.length > 0 ? (
                 <div className="mt-4">
                     <h1 className="text-sm mt-4">
-                        Posts found: 
+                        Publicaciones encontradas: 
                     </h1>
                     <PostsGrid posts={posts}/>
                 </div>
             ) : (
                 <h1 className="text-sm mt-4">
-                    No posts found.
+                    Ninguna publicación encontrada.
                 </h1>
             )}
         </div>

@@ -27,16 +27,16 @@ export default async function Home(){
             }}>
               <button className="w-80 flex items-center justify-center gap-2 border px-4 py-2 bg-white text-gray-700 rounded-lg hover:bg-gray-100" type="submit">
                 <img src="https://www.svgrepo.com/show/475656/google-color.svg" alt="Google" className="w-5 h-5"/>
-                Login with google
+                Iniciar sesión con Google
               </button>
             </form>
             <p className="mt-8">
-              Dont have an account?{" "}
-              <a href="/register" className="text-blue-600">Sign up</a>
+              ¿No tienes una cuenta?{" "}
+              <a href="/register" className="text-blue-600">Regístrate</a>
             </p>
-            <p className="text-sm w-80 mt-10 text-justify">
-              ⚠ For educational purposes. The information you provide is your own responsibility.
-            </p>
+            {/* <p className="text-sm w-80 mt-10 text-justify">
+              ⚠ Para fines educativos. La información que proporcione es de su exclusiva responsabilidad.
+            </p> */}
           </div>
         </div>
       )}

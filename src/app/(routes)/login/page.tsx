@@ -21,9 +21,9 @@ export default function LoginPage(){
         {/* <h1 className="text-2xl font-semibold mb-6">Login</h1> */}
         <img className="" src="https://peach-gentle-xerinae-369.mypinata.cloud/ipfs/bafybeidfokam2ropi4ct34ryclrqrq277qeovj7zt24pwrllzun3xjfsmi" width={200} alt=""/>
         <form onSubmit={handleSubmit} className="flex flex-col gap-4 w-80">
-          <input type="text" placeholder="email" value={email} onChange={(e) => setEmail(e.target.value)} className="border rounded p-2"/>
-          <input type="password" placeholder="password" value={password} onChange={(e) => setPassword(e.target.value)} className="border rounded p-2"/>
-          <button type="submit" className="bg-blue-600 text-white rounded p-2 hover:bg-blue-700">Login</button>
+          <input type="text" placeholder="Correo electronico" value={email} onChange={(e) => setEmail(e.target.value)} className="border rounded p-2"/>
+          <input type="password" placeholder="Contraseña" value={password} onChange={(e) => setPassword(e.target.value)} className="border rounded p-2"/>
+          <button type="submit" className="bg-blue-600 text-white rounded p-2 hover:bg-blue-700">Iniciar sesión</button>
         </form>
       </div>
     </div>

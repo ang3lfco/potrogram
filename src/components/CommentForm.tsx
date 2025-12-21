@@ -23,9 +23,9 @@ export default function CommentForm({avatar, postId}:{avatar:string;postId:strin
                     <Avatar src={avatar}/>
                 </div>
                 <div className="w-full flex flex-col gap-2">
-                    <TextArea ref={areaRef} name="text" placeholder="Tell the world what your think..."/>
+                    <TextArea ref={areaRef} name="text" placeholder="Deja tú comentario..."/>
                     <div>
-                        <Button>Post comment</Button>
+                        <Button>Publicar comentario</Button>
                     </div>
                 </div>
             </div>

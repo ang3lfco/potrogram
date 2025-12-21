@@ -30,7 +30,7 @@ export default function SettingsForm({profile}:{profile?: Profile | null}){
 
                 if(!regex.test(username)){
                     e.preventDefault();
-                    alert("Invalid username format: Only letters and numbers are allowed");
+                    alert("Formato de nombre de usuario no válido: solo se permiten letras y números");
                     return;
                 }
             }}
@@ -56,11 +56,11 @@ export default function SettingsForm({profile}:{profile?: Profile | null}){
                     <input type="file" ref={fileInRef} className="hidden" onChange={ev => setFile(ev.target.files?.[0] || null)}/>
                     <Button className="!cursor-pointer" type="button" variant="soft" onClick={() => fileInRef.current?.click()}>
                         <CloudUpload/>
-                        change avatar
+                        Cambiar imagen
                     </Button>
                 </div>
             </div>
-            <p className="mt-2 font-bold">username</p>
+            <p className="mt-2 font-bold">Nombre de usuario</p>
             <TextField.Root 
                 name="username" 
                 defaultValue={profile?.username || ''} 
@@ -78,7 +78,7 @@ export default function SettingsForm({profile}:{profile?: Profile | null}){
                 }}
             />
             
-            <p className="mt-2 font-bold">name</p>
+            <p className="mt-2 font-bold">Nombre</p>
             <TextField.Root 
                 name="name" 
                 defaultValue={profile?.name || ''} 
@@ -96,14 +96,14 @@ export default function SettingsForm({profile}:{profile?: Profile | null}){
                 }}
             />
             
-            <p className="mt-2 font-bold">subtitle</p>
+            <p className="mt-2 font-bold">Descripción</p>
             <TextField.Root name="subtitle" defaultValue={profile?.subtitle || ''} placeholder="Graphic designer"/>
             
-            <p className="mt-2 font-bold">bio</p>
+            <p className="mt-2 font-bold">Biografía</p>
             <TextArea name="bio" defaultValue={profile?.bio || ''}/>
             
             <div className="mt-4 flex justify-center">
-                <Button variant="solid" className="!cursor-pointer">Save settings</Button>
+                <Button variant="solid" className="!cursor-pointer">Guardar configuración</Button>
             </div>
         </form>
     );

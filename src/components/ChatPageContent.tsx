@@ -48,8 +48,8 @@ export default function ChatPageContent({otherUser}:{otherUser: User;}){
                 ))}
             </div>
             <div className="p-3 flex gap-2 border-t">
-                <input className="border px-3 py-2 flex-1 rounded" value={text} onChange={(e) => setText(e.target.value)} placeholder="Type a message..." />
-                <button onClick={handleSend} className="bg-blue-500 text-white px-4 py-2 rounded">Send</button>
+                <input className="border px-3 py-2 flex-1 rounded" value={text} onChange={(e) => setText(e.target.value)} placeholder="Escriba un mensaje..." />
+                <button onClick={handleSend} className="bg-blue-500 text-white px-4 py-2 rounded">Enviar</button>
             </div>
         </div>
     );

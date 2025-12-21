@@ -10,7 +10,7 @@ export default async function SuggestedPeople(){
 
     return(
         <div>
-            <h1 className="text-sm text-gray-400 mb-4">Suggested people...</h1>
+            <h1 className="text-sm text-gray-400 mb-4">Personas sugeridas...</h1>
             {users.map((user) => (
                 <Link key={user.email} href={`/users/${user.username}`} className="flex items-center gap-2 hover:bg-gray-100 transition p-2 rounded-lg">
                     <div>

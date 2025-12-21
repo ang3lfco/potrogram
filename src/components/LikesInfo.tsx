@@ -38,7 +38,7 @@ export default function LikesInfo({
                 </button>
                 {showText && (
                     <p>
-                        {post.likesCount} people like this
+                        {post.likesCount} personas les gustó esta publicación
                     </p>
                 )}
         </form>

@@ -10,7 +10,7 @@ export default function SearchForm(){
             router.push('/search?query=' + data.get('query'));
             router.refresh();
         }}>
-            <TextField.Root name="query" placeholder="Search for something">
+            <TextField.Root name="query" placeholder="Buscar">
                 <TextField.Slot>
                     <Search/>
                 </TextField.Slot>

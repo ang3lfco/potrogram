@@ -30,7 +30,7 @@ export default function FollowButton({
         }}>
             <Button size="3" className={ isFollowed ? "bg-gradient-to-tr from-ig-orange to-ig-red from-50%" : "bg-gradient-to-tr from-ig-orange to-ig-red to-80%"}>
                 {isFollowed ? <UserMinus/> : <UserPlus/>}
-                {isFollowed ? 'unfollow':'follow'}
+                {isFollowed ? 'Dejar de seguir':'Seguir'}
             </Button>
         </form>
     );

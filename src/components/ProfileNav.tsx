@@ -17,10 +17,10 @@ export default function ProfileNav({
         <div>
             <section className="mt-4">
                 <div className="flex justify-center gap-4 font-bold">
-                    <Link className={postsActive ? 'text-gray-800' : "text-gray-400"} href={isOurProfile ? '/profile': `/${username}`}>Posts</Link>
+                    <Link className={postsActive ? 'text-gray-800' : "text-gray-400"} href={isOurProfile ? '/profile': `/${username}`}>Publicaciones</Link>
                     {/* <Link className={highlightsActive ? 'text-gray-800' : "text-gray-400"} href={'/highlights'}>Highlights</Link> */}
                     {isOurProfile && (
-                        <Link href={'/profile/bookmarked'} className={bookmarkedActive ? 'text-gray-800' : "text-gray-400"}>Bookmarked</Link>
+                        <Link href={'/profile/bookmarked'} className={bookmarkedActive ? 'text-gray-800' : "text-gray-400"}>Favoritos</Link>
                     )}
                 </div>
             </section>

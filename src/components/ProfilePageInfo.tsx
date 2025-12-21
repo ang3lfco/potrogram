@@ -60,8 +60,8 @@ export default async function ProfilePageInfo({
                     {profile.bio}
                 </p>
                 <div className="flex justify-center items-center gap-4 p-2 border-b border-b-gray-200 pb-4">
-                    <p><span className="font-bold">{following}</span> <span className="text-gray-500">following</span></p>
-                    <p><span className="font-bold">{followers}</span> <span className="text-gray-500">followers</span></p>
+                    <p><span className="font-bold">{following}</span> <span className="text-gray-500">Siguiendo</span></p>
+                    <p><span className="font-bold">{followers}</span> <span className="text-gray-500">Seguidores</span></p>
                 </div>
             </section>
             {!isOurProfile && (

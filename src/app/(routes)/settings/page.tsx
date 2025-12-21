@@ -15,7 +15,7 @@ export default async function SettingsPage(){
     return(
         <div className="max-w-sm mx-auto mt-3">
             <h1 className="text-xl font-bold mb-4 ">
-                Profile settings
+                Configuración del perfil
             </h1>
             <SettingsForm profile={profile} />
             <div className="flex justify-center mt-4 pt-4 border-t mb-10 border-gray-200">
@@ -24,7 +24,7 @@ export default async function SettingsPage(){
                     await signOut();
                     redirect('/');
                 }}>
-                    <Button className="!cursor-pointer " type="submit" variant="outline">Log out</Button>
+                    <Button className="!cursor-pointer " type="submit" variant="outline">Cerrar sesión</Button>
                 </form>
             </div>
         </div>

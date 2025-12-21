@@ -29,7 +29,7 @@ export default function FastComment({postId}:{postId:string}){
                     className="!rounded-none *:!pl-0 !min-h-[2rem] !max-h-[2rem] !shadow-none !outline-none" 
                     ref={areaRef} 
                     name="text" 
-                    placeholder="Add comment..."
+                    placeholder="Agregar comentario rápido..."
                     onKeyDown={handleKeyDown}
                 />
             </div>

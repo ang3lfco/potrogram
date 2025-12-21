@@ -66,7 +66,7 @@ export default function CreatePage(){
                                         const f = ev.target.files?.[0];
                                         if(!f) return;
                                         if(!["image/png", "image/jpeg", "image/jpg"].includes(f.type)){
-                                            alert("PNG or JPG images only");
+                                            alert("Solo imágenes PNG o JPG");
                                             ev.target.value = "";
                                             return;
                                         }
@@ -82,7 +82,7 @@ export default function CreatePage(){
                                     {!isUploading && (
                                         <CloudUpload size={16}/>
                                     )}
-                                    {isUploading ? 'Uploading...' : 'Choose image'}
+                                    {isUploading ? 'Subiendo...' : 'Elige una imagen'}
                                 </Button>
                             </div>
                         </div>
@@ -96,11 +96,11 @@ export default function CreatePage(){
                         <div className="">{username}</div>
                     </div>
                     <div className="flex flex-col gap-2 mb-4">
-                        <TextArea name="description" className="h-16" placeholder="Add post description..."/>
+                        <TextArea name="description" className="h-16" placeholder="Añadir descripción..."/>
                     </div>
                     <Button className="!cursor-pointer">
                         <Send size={16}/>
-                        Publish
+                        Publicar
                     </Button>
                 </div>
             </form>

@@ -33,8 +33,8 @@ export default async function BookmarkedPage(){
                     <PostsGrid posts={posts} />
                 ) : (
                     <div className="text-center text-gray-500 mt-10">
-                        <p className="text-lg font-medium">No saved posts</p>
-                        <p className="text-sm text-gray-400">Save posts to see them here later.</p>
+                        <p className="text-lg font-medium">No tienes publicaciones en favoritos.</p>
+                        <p className="text-sm text-gray-400">Guarda algunas publicaciones y vuelve.</p>
                     </div>
                 )}
                 

@@ -11,7 +11,7 @@ export default function HomeTopRow({profiles}:{profiles:Profile[]}){
                 <button className="size-24 bg-gradient-to-tr from-ig-lightblue to-ig-blue text-white rounded-full flex items-center justify-center">
                     <PlusIcon size="42"/>
                 </button>
-                <p className="text-center text-gray-500 text-sm cursor-pointer">Add story</p>
+                <p className="text-center text-gray-500 text-sm cursor-pointer">Subir historia</p>
             </div>
             {profiles.map(profile => (
                 <div key={profile.id} className="w-24 flex flex-col justify-center items-center">
