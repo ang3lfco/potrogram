@@ -36,10 +36,11 @@ This project demonstrates real-world full-stack development skills: from databas
 > Secure sign-in with email/password or Google OAuth, powered by NextAuth.js with JWT sessions.
 
 <!-- Screenshot: Login page -->
-> 📷 *Screenshot placeholder — Login screen*
+<img width="1366" height="768" alt="Screenshot (2297)" src="https://github.com/user-attachments/assets/688e2015-2fc2-466f-9774-d14648af0572" />
+
 
 <!-- Screenshot: Register page -->
-> 📷 *Screenshot placeholder — Register screen*
+<img width="1366" height="768" alt="Screenshot (2298)" src="https://github.com/user-attachments/assets/89856879-e2f0-4032-ba87-66c9cc43b1ef" />
 
 ---
 
@@ -47,7 +48,9 @@ This project demonstrates real-world full-stack development skills: from databas
 > A personalized feed that displays posts from users you follow, with real-time like interactions and quick comment access.
 
 <!-- Screenshot: Home feed -->
-> 📷 *Screenshot placeholder — Home feed with posts*
+<img width="1366" height="768" alt="Screenshot (2295)" src="https://github.com/user-attachments/assets/e42d3923-dc91-42d0-8eec-0b3f002f3959" />
+<img width="1366" height="768" alt="Screenshot (2296)" src="https://github.com/user-attachments/assets/8a494e5d-c283-4dfa-bad1-1bd152ccb9a1" />
+
 
 ---
 
@@ -55,7 +58,8 @@ This project demonstrates real-world full-stack development skills: from databas
 > Upload a photo and add a description. Images are stored securely in the cloud via **Pinata (IPFS)**, so they load fast and stay available.
 
 <!-- Screenshot: Create post page -->
-> 📷 *Screenshot placeholder — Post creation form*
+<img width="1366" height="768" alt="Screenshot (2287)" src="https://github.com/user-attachments/assets/3e18a3b1-50e7-41fb-a201-e1022c4517b7" />
+
 
 ---
 
@@ -63,7 +67,7 @@ This project demonstrates real-world full-stack development skills: from databas
 > Interact with any post — like it, leave a comment, or view all comments in a detailed post view.
 
 <!-- Screenshot: Single post with comments -->
-> 📷 *Screenshot placeholder — Post detail view with likes and comments*
+<img width="1366" height="768" alt="Screenshot (2290)" src="https://github.com/user-attachments/assets/02849334-7026-4a82-a92c-974a4e9a196c" />
 
 ---
 
@@ -71,7 +75,7 @@ This project demonstrates real-world full-stack development skills: from databas
 > Save posts you want to revisit. Bookmarked content is available in its own dedicated section on your profile.
 
 <!-- Screenshot: Bookmarked posts section -->
-> 📷 *Screenshot placeholder — Bookmarks page*
+<img width="1366" height="768" alt="Screenshot (2294)" src="https://github.com/user-attachments/assets/06d3a790-6c99-4be5-84b1-2300e522cfdb" />
 
 ---
 
@@ -79,7 +83,7 @@ This project demonstrates real-world full-stack development skills: from databas
 > Follow and unfollow other users. Your home feed updates to reflect the people you care about.
 
 <!-- Screenshot: User profile with follow button -->
-> 📷 *Screenshot placeholder — User profile page with follow/unfollow*
+<img width="1366" height="768" alt="Screenshot (2292)" src="https://github.com/user-attachments/assets/d0e16111-c8ff-4342-9f11-01d53fa75e03" />
 
 ---
 
@@ -87,7 +91,7 @@ This project demonstrates real-world full-stack development skills: from databas
 > Send direct messages to any user. Conversations are organized per user pair and load in chronological order.
 
 <!-- Screenshot: Messages page -->
-> 📷 *Screenshot placeholder — Messaging interface*
+<img width="1366" height="768" alt="Screenshot (2288)" src="https://github.com/user-attachments/assets/9c58ae3a-f9fe-40d8-a069-389efcdb301c" />
 
 ---
 
@@ -95,7 +99,7 @@ This project demonstrates real-world full-stack development skills: from databas
 > Find other users instantly by username with a live search experience.
 
 <!-- Screenshot: Search page -->
-> 📷 *Screenshot placeholder — Search results*
+<img width="1366" height="768" alt="Screenshot (2291)" src="https://github.com/user-attachments/assets/69ac62d0-04e0-4c37-8b9a-6aed307e484c" />
 
 ---
 
@@ -103,7 +107,7 @@ This project demonstrates real-world full-stack development skills: from databas
 > Stay informed about activity related to your content and profile.
 
 <!-- Screenshot: Notifications page -->
-> 📷 *Screenshot placeholder — Notifications view*
+<img width="1366" height="768" alt="Screenshot (2289)" src="https://github.com/user-attachments/assets/6f524567-126d-44f7-861a-812c156d72e9" />
 
 ---
 
@@ -111,7 +115,7 @@ This project demonstrates real-world full-stack development skills: from databas
 > Customize your public profile: name, username, avatar, bio, and subtitle — all editable from a clean settings form.
 
 <!-- Screenshot: Settings form -->
-> 📷 *Screenshot placeholder — Settings page*
+<img width="1366" height="768" alt="Screenshot (2293)" src="https://github.com/user-attachments/assets/057a20d2-3a77-4976-a266-bdb46cbbae13" />
 
 ---
 
