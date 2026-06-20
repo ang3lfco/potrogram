@@ -270,7 +270,7 @@ potrogram/
 
 ## 👨‍💻 Author
 
-**@ang3lfco** — Full-stack Developer
+**@ang3lfco** — Full-Stack Developer
 
 > Building practical software for real-world use cases.
 
